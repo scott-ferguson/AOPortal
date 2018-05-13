@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AegonOnlinePortal.Areas.Customer.Controllers
+namespace AegonOnlinePortal.Areas.Public.Controllers
 {
     public class CustomerController : Controller
     {
-        // GET: Customer/Customer
+        // GET: Public/Customer
         public ActionResult Index()
         {
             return View();

@@ -1,22 +1,22 @@
 ﻿using System.Web.Mvc;
 
-namespace AegonOnlinePortal.Areas.Customer
+namespace AegonOnlinePortal.Areas.Public
 {
-    public class CustomerAreaRegistration : AreaRegistration 
+    public class PublicAreaRegistration : AreaRegistration 
     {
         public override string AreaName 
         {
             get 
             {
-                return "Customer";
+                return "Public";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                "Customer_default",
-                "Customer/{controller}/{action}/{id}",
+                "Public_default",
+                "Public/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }
